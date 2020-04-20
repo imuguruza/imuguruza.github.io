@@ -3,7 +3,7 @@ layout: default
 ---
 # Implementing a two seven-segment display counter in Alhambra II
 
-In my previous entry, I explained that I have acquired an Alhambra II board for implementing designs using open-source tools.
+In my [previous entry](fpga-boards), I explained that I have acquired an Alhambra II board for implementing designs using open-source tools.
 
 During this time, I have been refreshing again some concepts of digital design and how to implement them in real hardware. One of the most valuable examples has been the [Verilog tutorial series](https://github.com/Obijuan/open-fpga-verilog-tutorial/wiki) that Obijuan created some years ago. This tutorial makes use of Icestorm and arachne P&R tools to implement different designs in an Icestick board. At the time it was written, the SymbiFlow project it was not born yet.
 
@@ -12,6 +12,10 @@ I have found this tutorials very useful because it shows the digital design-flow
 The changes I have made are minimal: I changed the pins of each example to adapt it to the board and I also have changed the synthetization commands, to adapt it to the package and flash memory that the Alhambra contains.
 
 After spending some time reviewing the tutorials, I feel pleased not needing to install a specific IDE for my computer, I just added a Verilog language plugin to Atom and install the tool-chain, and I was ready to start! This is one of the things I dislike the most of working in embedded, i very common to see that each manufacturer offers an integrated IDE with the tools, and the developer ends up installing different IDEs depending the target.
+
+
+![atom](img/atom.png)
+*Atom and Terminal, a smooth way to work imo*
 
 Once I finished with the tutorials, I have made my first example: a counter that display its value in an two seven-segment display. This example reminds me to my uni times where the Digital Electronics teacher showed us how to use buttons, LEDs, displays or knots in microcontrollers and FPGAs. I guess is always a good idea to start from such examples to refresh your brain again.
 
@@ -67,6 +71,6 @@ I hope that I can show you more things in a near future! Thanks for spending you
 
 ## Links
 
-+ [FPWAwars](http://fpgawars.github.io/)
++ [FPGAwars](http://fpgawars.github.io/)
 + [Verilog tutorial](https://github.com/Obijuan/open-fpga-verilog-tutorial/wiki)
 + [Display example](https://github.com/imuguruza/alhambra_II_test/tree/master/7_segment_display/src)
