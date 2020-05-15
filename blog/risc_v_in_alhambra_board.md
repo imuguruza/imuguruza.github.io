@@ -19,12 +19,12 @@ in other words, silicon makers, do not disclose **how** the implement the comput
 architecture in silicon.
 
 From the other hand, there are many truly open-source RISC-V implementations (softcores),
-made for FPGAs. Additionally, they are synthesized using open-source tools. So, **the
-implementation from ISA to the bitstream is made in open manner!**
+made for FPGAs. Additionally, they are synthesized using open-source tools. So, **from the
+ISA implementation to the bitstream creation is made in open manner!**
 
 __________
 
-:warning: **I am not a RISC-V expert, if anything stated here is not right, let me know :)** :warning:
+:warning: *I am not a RISC-V expert, if anything stated here is not right, let me know :)* :warning:
 
 __________
 
@@ -72,6 +72,10 @@ Info: 	               SB_GB:     6/    8    75%
 Info: 	        ICESTORM_PLL:     1/    2    50%
 Info: 	         SB_WARMBOOT:     0/    1     0%
 ```
+
+If you are interested about the details of Serv/Servant, see the vide below:
+
+[![Diode Zone Serv presentation](img/serv_vid.png)](https://diode.zone/videos/watch/0230a518-e207-4cf6-b5e2-69cc09411013)
 
 ### CoreScore
 
