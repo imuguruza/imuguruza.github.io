@@ -24,7 +24,7 @@ ISA implementation to the bitstream creation is made in open manner!**
 
 __________
 
-:warning: *I am not a RISC-V expert, if anything stated here is not right, let me know :)* :warning:
+:warning: *I am not a RISC-V expert, if anything stated here is not right, let me know* :warning:
 
 __________
 
