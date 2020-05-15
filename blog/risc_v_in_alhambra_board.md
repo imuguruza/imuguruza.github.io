@@ -109,7 +109,7 @@ it just required to add the [pinout file](https://github.com/fusesoc/blinky/blob
 
 ### Conclusion
 
-I think this post shows how digital hardware design field is a very buzzing
+I think this post shows how digital hardware design is a very buzzing
 field. To make this post, I have used several open-source items: RISC-V softcores, Zephyr, Fusesoc, Serv and Servant or CoresCore. I really hope
 that this new trend changes the landscape of digital design tools, where
 proprietary and black boxed-tools have been the rule, dominated by just a couple of very big FPGA vendors. In addition, it also opens the door of fusing this technology with others that are really consolidated, like Linux.
