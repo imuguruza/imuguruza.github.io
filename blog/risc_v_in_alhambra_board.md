@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# Running a RISC-V softcore in FPGA
+# Running a RISC-V softcore in a FPGA
 
 Nowadays there is a very big trend in implementing softcores in FPGAs. This trend has
 been boosted by the appearance of [RISC-V](https://riscv.org/). For those who are not familiar, RISC-V is an open-source and free Instruction Set Architecture
