@@ -6,3 +6,5 @@ google_analytics:
 theme: jekyll-theme-minimal
 mail: muguruzainigo@gmail.com
 linkedin: https://www.linkedin.com/in/inigomuguruza
+plugins:
+  - jemoji
