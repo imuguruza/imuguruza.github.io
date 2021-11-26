@@ -9,6 +9,7 @@ I hope you can enjoy, learn or take some valuable info!
 
 Here you can find the entries I have written so far:
 
++ [Getting started with ULX3S board: 2x blinky](ulx3s_getting_started)
 + [Improving VGA image displayer](vga_II)
 + [Running a RISC-V softcore in Alhambra II](risc_v_in_alhambra_board)
 + [Displaying images through VGA Alhambra II](vga)

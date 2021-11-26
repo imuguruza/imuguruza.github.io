@@ -5,7 +5,7 @@ layout: default
 
 I am a hardware engineer who is enthusiastic about electronic design (PCBs), robotic and embedded fields -Linux running uPs, microcontrollers, FPGAs and hybrid FPGA-uP architectures-, [ROS](https://www.ros.org/) and open-source software/hardware in general. I am also keen on the field where the hardware and software worlds merge, such as Linux kernel or drivers, even though it can be a nightmare :-)
 
-Lately, I find very interesting hybrid computing architectures for speeding up data processing, based on hardware accelerators (mainly FPGAs) for robotics and autonomous technology, such us autonomous cars.
+Lately, I find very interesting hybrid computing architectures for speeding up data processing, based on hardware accelerators (based on FPGAs) for robotics and autonomous technology, such us autonomous cars.
 
 Apart from technology, I am also a big cycling, hiking, swimming and traveling lover.
 
