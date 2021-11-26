@@ -45,7 +45,7 @@ Now you should see that the LEDS start blinking, doing a binary counter pattern,
 
 ![](img/ulx3s_blinky.png)
 
-## FuseSoC Blinky to believe
+## FuseSoC LED to believe
 
 Now that we have upload a precompiled example, let's flash FuseSoC's "LED to believe" example. A while a go, I ported this example to the Alhambra II board, but this time, thi example is already supported.
 Before flashing, I have updated FuseSoC, to fetch the latest libraries: `$ fusesoc library update`.
