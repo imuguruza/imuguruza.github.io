@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-# ULX3S Development board: getting started
+# ULX3S Development board: getting started 
 
-Now that winter is coming back again, I am trying to order the projects I would like to develop in the following months. Is always hard to find time to tinker and write this blog entries, but, at the same time, it is really satisfying.
+Now that winter is coming again back, I am trying to order the projects I would like to develop in the following months. Is always hard to find time to tinker and write this blog entries, but, at the same time, it is really satisfying.
 
-I would like to continue exploring new ideas using FPGAs and, at some point, I would like to design a board using KiCAD. I also feel tempted to get a development board such as the Ultra96v2 or the new Kria SoM to play with ROS2 and hardware acceleration, which I think is one of the coolest thing to do out there. But, as the chip and component shortage is really bad and I still have plenty of material to keep tinkering, I will save some money for now.
+I would like to continue exploring new ideas using FPGAs and, at some point, I would like to design a board using KiCAD. I also feel tempted to get a development board such as the Ultra96v2 or the new Kria SoM to play with ROS2 and hardware acceleration, which I think is one of the coolest thing to do out there. But, as the chip and component shortage is really bad and I still have plenty of material to keep tinkering, I will save money for now.
 
 It's been a while since I purchased a Radiona [ULX3S](https://radiona.org/ulx3s/) board and still haven't used it. So this blog entry shows the first steps I have made with this board.
 There are several reasons why I purchased it:
@@ -16,7 +16,7 @@ There are several reasons why I purchased it:
 - It has been designed in KiCAD.
 - It's open source.
 - It has many exposed GPIOs and interfaces
-- And last but not least, the design is really neat and small.
+- And, last but not least, the design is really neat and small.
 
 You can see some characteristic of the board in the next image:
 
@@ -47,12 +47,18 @@ Now you should see that the LEDS start blinking, doing a binary counter pattern,
 
 ## FuseSoC LED to believe
 
-Now that we have upload a precompiled example, let's flash FuseSoC's "LED to believe" example. A while a go, I ported this example to the Alhambra II board, but this time, thi example is already supported.
+Now that we have upload a precompiled example, let's flash FuseSoC's "LED to believe" example. A while a go, I ported this example to the Alhambra II board, but this time, this example is already supported.
 Before flashing, I have updated FuseSoC, to fetch the latest libraries: `$ fusesoc library update`.
 
-Then compile let's compile the blinky example: `$ fusesoc run --target=ulx3s_85 fusesoc:utils:blinky`.
+Then compile the blinky example: `$ fusesoc run --target=ulx3s_85 fusesoc:utils:blinky`.
 
-Last, you can use `fujprog` to upload the bitstream, for doing so, go to be build folder and upload the bitstream: `$ cd build/fusesoc_utils_blinky_1.0/ulx3s_85-trellis` and `$ fujprog fusesoc_utils_blinky_1.0.bit`. Now you should see something like:
+Last, you can use `fujprog` to upload the bitstream. For doing so, go to be build folder and upload the bitstream:
+
+`$ cd build/fusesoc_utils_blinky_1.0/ulx3s_85-trellis`
+
+and
+
+`$ fujprog fusesoc_utils_blinky_1.0.bit`. Now you should see something like:
 
 ![](img/fujprog_blinky.png)
 
@@ -64,9 +70,9 @@ And a red light should be blinking!
 
 Now that I got my hands dirty again, one of the following steps I want to do is to understand the hardware design of the board, so I will print the schematics and review how everything is connected. Afterwards, I might refresh the use of FuseSoC and Verilog, making some simple examples using LEDs and buttons.
 
-## Renesas ForgeFPGA
+## Fresh News: Renesas ForgeFPGA
 
-I just wanted to add that [Renesas has announced](https://www.renesas.com/eu/en/about/press-room/renesas-enters-fpga-market-first-ultra-low-power-low-cost-family-addressing-low-density-high-volume) that they will start selling small FPGAs, the family called ForgeFPGA. They have shared that it is designed for low cost, ultra-low-power and low density (<2K LUTs) applications. It is good to see that new players enter into the market. But what I found more satisfying is to see that their design tool is based in Yosys:
+I just wanted to add that [Renesas has announced](https://www.renesas.com/eu/en/about/press-room/renesas-enters-fpga-market-first-ultra-low-power-low-cost-family-addressing-low-density-high-volume) that they will start selling small FPGAs, this FPGA family has been named as ForgeFPGA. They have shared that it is designed for low cost, ultra-low-power and low density (<2K LUTs) applications. It is good to see that new players enter into the market. But what I found more satisfying is to see that their **design tool is based in Yosys**:
 
 ![](img/renesas.png)
 
